@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 import os, sys, subprocess
 
-# Open the Python log file in the master branch folder
+# Open the Node.js log file in the master branch folder
 master_path = os.path.join('..', 'master')
-logfile = open(os.path.join(master_path, 'python_sandbox.log'), 'a')
+logfile = open(os.path.join(master_path, 'nodejs_sandbox.log'), 'a')
 
 # Retrieve all branches in the repository...
 process = subprocess.Popen(
@@ -14,15 +14,16 @@ process = subprocess.Popen(
 out, err = process.communicate()
 out = out.split('\n')
 
-# Write the last commit message to the Python log file
+# Write the last commit message to the Node.js log file
 logfile.write(out[0] + '\n')
 logfile.close()
 
 # Change working directory to the master branch folder
 os.chdir(master_path)
 
-# Add and commit the Python log file
-command = 'git add -A;' + 'git commit -am \"Updating Python sandbox commit log...\"'
+# Add and commit the Node.js log file
+command = 'git add -A;' + 'git commit -am \"Updating Node.js sandbox 
+commit log...\"'
 process = subprocess.Popen(
                         command,
                         shell = True).wait()
