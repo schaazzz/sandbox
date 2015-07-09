@@ -22,8 +22,7 @@ logfile.close()
 os.chdir(master_path)
 
 # Add and commit the Node.js log file
-command = 'git add -A;' + 'git commit -am \"Updating Node.js sandbox 
-commit log...\"'
+command = 'git add -A;' + 'git commit -am \"Updating Node.js sandbox commit log...\"'
 process = subprocess.Popen(
                         command,
                         shell = True).wait()
