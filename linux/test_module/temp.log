@@ -1,0 +1,13 @@
+make -C /usr/src/linux-headers-2.6.22-14 SUBDIRS=/home/shahzeb/Projects/scratch_pad/test_module modules
+make[1]: Entering directory `/usr/src/linux-headers-2.6.22-14'
+
+  ERROR: Kernel configuration is invalid.
+         include/linux/autoconf.h or include/config/auto.conf are missing.
+         Run 'make oldconfig && make prepare' on kernel src to fix it.
+
+
+  WARNING: Symbol version dump /usr/src/linux-headers-2.6.22-14/Module.symvers
+           is missing; modules will have no dependencies and modversions.
+
+  CC [M]  /home/shahzeb/Projects/scratch_pad/test_module/test_module.o
+make[1]: Leaving directory `/usr/src/linux-headers-2.6.22-14'

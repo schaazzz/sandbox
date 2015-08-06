@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Test script
+
+if [ -n "$1" ]
+then
+	echo "Something..."
+else
+	echo "Something else..."
+fi
+
+if [ "$1" -ne 1 ]
+then
+	echo "You said hello"
+else
+	echo "How rude"
+fi
+
+exit 0
