@@ -1,0 +1,12 @@
+<application xmlns="http://ns.adobe.com/air/application/1.5"> 
+ 
+    <id>shahzeb.air.html.TcpClient</id> 
+    <version>0.1</version> 
+    <filename>tcp_client</filename> 
+    <initialWindow> 
+        <content>tcp_client.html</content> 
+        <visible>true</visible> 
+        <width>550</width> 
+        <height>550</height> 
+    </initialWindow> 
+</application>
