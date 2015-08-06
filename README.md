@@ -1,6 +1,6 @@
 # Sandbox - Everything and anything goes here....
 
-Branches:
+Folders:
 * **python** - Python sandbox
 * **nodejs** - Node.js sandbox
 * **ruby** - Ruby/Ruby on Rails sandbox
