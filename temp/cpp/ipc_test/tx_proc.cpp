@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
 #include <signal.h>
-#include "base_proc.hpp"
+#include "proc_base.hpp"
+#include "proc_ipc_queues.hpp"
 
 using namespace std;
 
@@ -9,10 +10,10 @@ int main(void) {
     int q_id = -1;
     string msg;
 
-    BaseProc *tx_proc = new BaseProc("tx_proc");
-    signal(SIGINT, &(BaseProc::IntHandler));
+    ProcBase *tx_proc = new ProcIPCQueues("tx_proc");
+    signal(SIGINT, &(ProcBase::IntHandler));
 
-    q_id = tx_proc->CreateMsgQueue();
+    q_id = dynamic_cast<ProcIPCQueues*>(tx_proc)->CreateMsgQueue();
     cout << "Queue ID:" << q_id << endl;
 
     for(;;) {

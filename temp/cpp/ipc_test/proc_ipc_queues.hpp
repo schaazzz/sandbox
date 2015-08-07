@@ -1,8 +1,7 @@
-class BaseProc {
+class ProcIPCQueues : public ProcBase {
 private:
     int             q_id_;
     int             key_val_;
-    std::string     process_name_;
 
     struct {
         long mtype;
@@ -10,10 +9,8 @@ private:
     } send_buff_, rcv_buff_;
 
 public:
-    BaseProc(std::string processName);
+    ProcIPCQueues(std::string process_name_);
     int CreateMsgQueue(void);
     void SendMsg(std::string msg);
     std::string GetMsg(void);
-
-    static void IntHandler(int sigNum);
 };

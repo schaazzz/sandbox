@@ -6,19 +6,12 @@
 #include <sys/ipc.h>
 #include <sys/msg.h>
 #include <unistd.h>
-#include "base_proc.hpp"
+#include "proc_base.hpp"
+#include "proc_ipc_queues.hpp"
 
-BaseProc::BaseProc(std::string process_name) {
-    process_name_ = process_name;
-    std::cout << process_name_ + " created!" << std::endl;
-}
+ProcIPCQueues::ProcIPCQueues(std::string process_name) : ProcBase(process_name) {}
 
-void BaseProc::IntHandler(int sig_num) {
-    std::cout << "\nExiting, thank you for playing...\n";
-    exit(1);
-}
-
-int BaseProc::CreateMsgQueue(void) {
+int ProcIPCQueues::CreateMsgQueue(void) {
     if((key_val_ = ftok(get_current_dir_name(), '0')) == -1) {
         return (-1);
     }
@@ -30,7 +23,7 @@ int BaseProc::CreateMsgQueue(void) {
     return (q_id_);
 }
 
-void BaseProc::SendMsg(std::string msg) {
+void ProcIPCQueues::SendMsg(std::string msg) {
     int length = sizeof(send_buff_) - sizeof(long);
 
     std::memcpy(send_buff_. mtext, msg.data(), sizeof(msg.data()));
@@ -41,7 +34,7 @@ void BaseProc::SendMsg(std::string msg) {
     }
 }
 
-std::string BaseProc::GetMsg() {
+std::string ProcIPCQueues::GetMsg() {
     int length = sizeof(rcv_buff_) - sizeof(long);
     std::string msg = "";
     if(msgrcv(q_id_, &rcv_buff_, length, 9, 0)  == -1) {
