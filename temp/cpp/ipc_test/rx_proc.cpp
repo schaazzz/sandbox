@@ -1,23 +1,23 @@
 #include <iostream>
 #include <string>
 #include <signal.h>
-#include "process.hpp"
+#include "base_proc.hpp"
 
 using namespace std;
 
 int main(void) {
-    int qID = -1;
+    int q_id = -1;
     string msg;
 
-    Process *rx_proc = new Process("rx_proc");
-    signal(SIGINT, &(Process::intHandler));
+    BaseProc *rx_proc = new BaseProc("rx_proc");
+    signal(SIGINT, &(BaseProc::IntHandler));
 
-    qID = rx_proc->createMsgQueue();
-    cout << "Queue ID:" << qID << endl;
+    q_id = rx_proc->CreateMsgQueue();
+    cout << "Queue ID:" << q_id << endl;
 
     cout << "Waiting for messages [Ctrl-C to exit]" << endl;
     for(;;) {
-        std::string msg = rx_proc->getMsg();
+        std::string msg = rx_proc->GetMsg();
         cout << "Received message : " << msg << endl;
     }
 }
