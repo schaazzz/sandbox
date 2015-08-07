@@ -15,5 +15,7 @@ public:
     Process(std::string processName);
     int createMsgQueue(void);
     void sendMsg(std::string msg);
-    void getMsg(void);
+    std::string getMsg(void);
+
+    static void intHandler(int sigNum);
 };
