@@ -17,10 +17,3 @@ void ProcBase::IntHandler(int sig_num) {
     std::cout << "\nExiting, thank you for playing...\n";
     exit(1);
 }
-
-void ProcBase::SendMsg(std::string msg) {
-}
-
-std::string ProcBase::GetMsg() {
-    return "";
-}
