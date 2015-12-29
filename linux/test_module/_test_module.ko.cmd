@@ -1,1 +1,0 @@
-cmd_/home/shahzeb/Projects/scratch_pad/test_module/test_module.ko := ld -m elf_i386 -m elf_i386 -r -o /home/shahzeb/Projects/scratch_pad/test_module/test_module.ko /home/shahzeb/Projects/scratch_pad/test_module/test_module.o /home/shahzeb/Projects/scratch_pad/test_module/test_module.mod.o
