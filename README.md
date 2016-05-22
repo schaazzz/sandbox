@@ -10,5 +10,5 @@ Folders:
 * **air** - Adobe Air sandbox
 * **openwrt** - OpenWRT sandbox
 * **linux** - Generic Linux development sandbox
-* **pnacl** - PNaCl (Portable Native Client) sandbox
 * **meteor** - Meteor sandbox
+* **pnacl** - PNaCl (Portable Native Client) sandbox
