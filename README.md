@@ -11,4 +11,4 @@ Folders:
 * **openwrt** - OpenWRT sandbox
 * **linux** - Generic Linux development sandbox
 * **pnacl** - PNaCl (Portable Native Client) sandbox
-* **mete
+* **meteor
