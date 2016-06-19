@@ -10,4 +10,4 @@ Folders:
 * **air** - Adobe Air sandbox
 * **openwrt** - OpenWRT sandbox
 * **linux** - Generic Linux development sandbox
-* **pnacl** - PNaCl (Portable Native Clie)
+* **pnacl** - PNaCl (Portable Native Clien)
