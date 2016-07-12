@@ -1,0 +1,57 @@
+# Updated by fix_deps.py
+pnacl/Release/test_app.o: test_app.cc \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/cpp/instance.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/pp_instance.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/pp_macros.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/pp_stdint.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/pp_resource.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/ppb_console.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/pp_bool.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/pp_var.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/cpp/instance_handle.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/cpp/view.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/cpp/resource.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/cpp/pass_ref.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/cpp/rect.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/pp_rect.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/pp_point.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/pp_size.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/cpp/point.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/cpp/size.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/cpp/logging.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/cpp/module.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/pp_module.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/ppb.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/ppb_core.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/pp_completion_callback.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/pp_time.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/cpp/core.h \
+  C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/cpp/var.h
+test_app.cc:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/cpp/instance.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/pp_instance.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/pp_macros.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/pp_stdint.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/pp_resource.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/ppb_console.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/pp_bool.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/pp_var.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/cpp/instance_handle.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/cpp/view.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/cpp/resource.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/cpp/pass_ref.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/cpp/rect.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/pp_rect.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/pp_point.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/pp_size.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/cpp/point.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/cpp/size.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/cpp/logging.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/cpp/module.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/pp_module.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/ppb.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/ppb_core.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/pp_completion_callback.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/c/pp_time.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/cpp/core.h:
+C:/tool/misc/nacl_sdk/pepper_49/include\ppapi/cpp/var.h:

@@ -1,0 +1,37 @@
+<body>
+    <div class="container">
+        <header>
+            {{#with title}}
+                {{> header}}
+            {{/with}}
+
+            <label class="hide-completed">
+                <input type="checkbox" checked="{{hideCompleted}}" />
+                Hide Completed Masks
+            </label>
+
+            {{> loginButtons}}
+
+            {{#if currentUser}}
+                <form class="new-task">
+                    <input type="text" name="text" placeholder="Type to add new tasks" />
+                </form>
+            {{/if}}
+        </header>
+
+        <ul>
+            {{#each tasks}}
+                {{> task}}
+            {{/each}}
+        </ul>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
+      </div>
+    </footer>
+</body>
+
+<template name="header">
+    <h1>{{text}} ({{incompleteCount}})</h1>
+</template>

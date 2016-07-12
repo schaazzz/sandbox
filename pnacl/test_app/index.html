@@ -1,0 +1,45 @@
+<!DOCTYPE  html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PNaCl C++ Test App</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/flat-ui.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>PNaCl C++ Test App</h1>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <h6>Module Load Status: <code id="status-field">---</code></h6>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-6">
+                    <textarea id="txt-input" class="form-control" rows="15" style="resize: none;"></textarea>
+                </div>
+
+                <div class="col-xs-6">
+                    <textarea id="txt-output" class="form-control" rows="15" style="resize: none;"></textarea>
+                </div>
+            </div>
+
+            <div id="listener">
+                <embed id="test-app"
+                    width=0 height=0
+                    src="pnacl/Release/test_app.nmf"
+                    type="application/x-pnacl"/>
+            </div>
+        </div>
+    </body>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/flat-ui.js"></script>
+    <script src="js/test-app.js"></script>
+</html>
