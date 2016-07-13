@@ -37,7 +37,6 @@ class TestAppInstance : public pp::Instance {
             code_dict['x'] = 'c';
             code_dict['y'] = 'w';
             code_dict['z'] = 's';
-
         }
 
         virtual ~TestAppInstance() {}
