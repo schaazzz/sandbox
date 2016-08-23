@@ -12,3 +12,4 @@ Folders:
 * **linux** - Generic Linux development sandbox
 * **pnacl** - PNaCl (Portable Native Client) sandbox
 * **meteor** - Meteor sandbox
+* **django** - Django sandbox
